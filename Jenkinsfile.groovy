@@ -14,6 +14,7 @@ node('NODE') {
 
         stage("register data") {
             consul.register(jsonRegisterData)
+            echo "check"
         }
 
         stage("store some data") {
